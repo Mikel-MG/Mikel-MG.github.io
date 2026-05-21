@@ -16,6 +16,12 @@ layout: layouts/base.njk
 
 {{ content | safe }}
 
+{%- if repolink %}
+<div class="post-source">
+        Link to the <a href="{{ repolink }}" target="_blank" rel="noopener">source</a>
+</div>
+{%- endif %}
+
 {%- if collections.posts %}
 {%- set previousPost = collections.posts | getPreviousCollectionItem %}
 {%- set nextPost = collections.posts | getNextCollectionItem %}

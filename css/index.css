@@ -296,3 +296,10 @@ header {
 	margin-right: 1em;
 }
 
+.post-source {
+    margin-top: 1rem;
+    display: block;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
