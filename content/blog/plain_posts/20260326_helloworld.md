@@ -3,6 +3,7 @@ title: Hello world
 description: This is my first post!
 date: 2026-03-26
 tags: meta 
+permalink: /posts/{{ title | slug }}/
 ---
 
 I have decided to start writing a blog. Well, no, that is a lie. I decided to write a blog some time ago, and just now I got to work on it. In this first post, I would like to provide some background, outline my motivations, and provide a brief overview of my *current* vision for this page.
