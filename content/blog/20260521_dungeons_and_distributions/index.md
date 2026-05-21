@@ -59,7 +59,7 @@ In other words, the *relative standard deviation* decreases with the number of d
 
 ## Spread versus number of dice
 
-This is all well and good, but what does this mean in practice? Let us now compare distributions with the same mean (vertically-aligned data points in Fig. 1 and Fig. 2). In the next figure, several distributions that share a common mean value are shown, color-coded by the combination of thrown dice (`8d2` means 8 2-faced dice; I guess these would be coins, but you get the idea).
+This is all well and good, but what does this mean in practice? Let us now compare distributions with the same mean (vertically-aligned data points in Fig. 2 and Fig. 3). In the next figure, several distributions that share a common mean value are shown, color-coded by the combination of thrown dice (`8d2` means 8 2-faced dice; I guess these would be coins, but you get the idea).
 
 <figure>
   <img src="./figures/dists_centered_means.webp" alt="dists_centered_around_means">
