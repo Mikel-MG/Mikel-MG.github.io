@@ -7,8 +7,20 @@ import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import pluginFilters from "./_config/filters.js";
 import mathjaxPlugin from "eleventy-plugin-mathjax";
 
+const slugify = (str) =>
+  str
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\s-]/g, "")   // remove special chars
+    .replace(/\s+/g, "-")       // spaces → hyphens
+    .replace(/-+/g, "-");       // collapse multiple hyphens
+
+
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function(eleventyConfig) {
+	// add slug function to generate permalinks
+  eleventyConfig.addFilter("slug", slugify);
+  
 	// add latex
 	eleventyConfig.addPlugin(mathjaxPlugin);
 
