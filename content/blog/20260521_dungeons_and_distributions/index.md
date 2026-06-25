@@ -4,14 +4,14 @@ description: Exploring expected outcomes of dice combinations
 date: 2026-05-21
 tags: statistics
 permalink: /posts/{{ title | slug }}/
-repolink: https://github.com/Mikel-MG/Mikel-MG.github.io/tree/main/content/blog/20260521_dungeons_and_distributions/ 
+repolink: https://github.com/Mikel-MG/Mikel-MG.github.io/tree/main/content/blog/20260521_dungeons_and_distributions/
 ---
 
 ## Introduction
 
-In the Dungeons and Dragons role-playing game, the players make use of various combinations of dice, and their corresponding outcome distributions, to represent the difficulty of an action. For instance, the amount of damage that a player character does to the otherwise peaceful goblin that has been caught by surprise may be decided by *rolling* two 4-sided dice (`2d4`) and adding the results.
+In the Dungeons and Dragons role-playing game, the players make use of various combinations of dice, and their corresponding outcome distributions, to represent the difficulty of an action. For instance, the amount of damage that a player character does to the otherwise peaceful goblin that has been caught by surprise may be decided by _rolling_ two 4-sided dice (`2d4`) and adding the results.
 
-I want to explore the distributions that result from these kinds of *rolls*. In particular, I am interested in analyzing how the spread of expected outcomes relates to the number and type of dice.
+I want to explore the distributions that result from these kinds of _rolls_. In particular, I am interested in analyzing how the spread of expected outcomes relates to the number and type of dice.
 
 ## Distributions
 
@@ -20,7 +20,7 @@ Let us begin by looking at the distributions produced by different combinations 
 <figure>
   <img src="./figures/array_histograms.webp" alt="array_histograms">
   <figcaption>
-    Fig. 1: Array of outcome distributions for varying numbers and types of dice. Rows represent dice with 1–6 faces, and columns represent 2–6 dice.
+    Fig. 1: Array of outcome distributions for varying numbers and types of dice. Rows represent dice with 2–6 faces, and columns represent 1–6 dice.
   </figcaption>
 </figure>
 
@@ -48,7 +48,7 @@ In Figure 2, we can see that the slope decreases with each added die, which mean
   </figcaption>
 </figure>
 
-In other words, the *relative standard deviation* decreases with the number of dice! This is further illustrated in the following figure, where the distributions for the sum of an increasing number of 6-sided dice are shown; notice how the relative spread that is gained from the additional dice is progressively smaller.
+In other words, the _relative standard deviation_ decreases with the number of dice! This is further illustrated in the following figure, where the distributions for the sum of an increasing number of 6-sided dice are shown; notice how the relative spread that is gained from the additional dice is progressively smaller.
 
 <figure>
   <img src="./figures/dists_by_ndice.webp" alt="dists_by_ndice">
@@ -72,7 +72,7 @@ Notice anything interesting? It would seem that for distributions that share the
 
 ## Conclusions
 
-The math involved in this exploration is exceedingly simple, yet its consequences are deep. For one, the DM (Distribution Master) can modulate the risk/reward of a given action in the game by using different distributions. Some players may be enticed by the idea of a high-risk, high-reward action, such as a strong attack that can do a highly variable  amount of damage (very high or very low), and others may prefer consistent output of damage, for a more predictable, but safer, gameplay.
+The math involved in this exploration is exceedingly simple, yet its consequences are deep. For one, the DM (Distribution Master) can modulate the risk/reward of a given action in the game by using different distributions. Some players may be enticed by the idea of a high-risk, high-reward action, such as a strong attack that can do a highly variable amount of damage (very high or very low), and others may prefer consistent output of damage, for a more predictable, but safer, gameplay.
 
 > **Note**: Any implicit association that the author of this post may have drawn between games with randomness mechanics and gambling addiction is purely coincidental (what are the chances?).
 
@@ -80,17 +80,17 @@ The same statistical behaviour appears far beyond the realm of tabletop games. F
 
 Another way of looking at this is that, as the system size grows, the microscopic randomness averages out, resulting in more predictable and stable macroscopic behavior. This allows us to describe properties of macroscopic matter, such as temperature or pressure, as if they were uniform.
 
-***
+---
 
 Well, there it is, the dumbest way to approach statistical mechanics. I have to admit that when I started working on the post, I was not expecting to connect it to something so interesting.
 
 I would like to write more about statistical mechanics, and I have already begun work on a follow-up post about molecular simulation. If I ever finish it, I will add a link somewhere in this post.
 
->Mikel: I want to make a conceptual post without much technical background.<br>
->DM: *rolls 1d20*: 13<br>
->DM: Since you have a +2 in charisma for being your second post, but also a penalty of -1 for not commenting on the [$\mu \propto n$] and [$\sigma \propto \sqrt{n}$] relationships...<br>
->DM: *checks notes*: (13 + 2 - 1) >= 10 (standard difficulty)<br>
->DM: You write an okay post, but it's nothing special<br>
->Mikel: Nice.
+> Mikel: I want to make a conceptual post without much technical background.<br>
+> DM: _rolls 1d20_: 13<br>
+> DM: Since you have a +2 in charisma for being your second post, but also a penalty of -1 for not commenting on the [$\mu \propto n$] and [$\sigma \propto \sqrt{n}$] relationships...<br>
+> DM: _checks notes_: (13 + 2 - 1) >= 10 (standard difficulty)<br>
+> DM: You write an okay post, but it's nothing special<br>
+> Mikel: Nice.
 
 Mikel
