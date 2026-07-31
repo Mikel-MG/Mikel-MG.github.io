@@ -5,7 +5,10 @@ import pluginNavigation from "@11ty/eleventy-navigation";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
 import pluginFilters from "./_config/filters.js";
-import mathjaxPlugin from "eleventy-plugin-mathjax";
+// import mathjaxPlugin from "eleventy-plugin-mathjax";
+import mathjax3 from "markdown-it-mathjax3";
+import markdownIt from "markdown-it";
+
 
 const slugify = (str) =>
   str
@@ -22,7 +25,13 @@ export default async function(eleventyConfig) {
   eleventyConfig.addFilter("slug", slugify);
   
 	// add latex
-	eleventyConfig.addPlugin(mathjaxPlugin);
+	// eleventyConfig.addPlugin(mathjaxPlugin);
+  const md = markdownIt({
+    html: true
+  }).use(mathjax3);
+
+  eleventyConfig.setLibrary("md", md);
+
 
 	// Drafts, see also _data/eleventyDataSchema.js
 	eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
