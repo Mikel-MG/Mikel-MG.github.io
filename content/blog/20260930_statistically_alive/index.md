@@ -46,7 +46,7 @@ Let us first consider genome composition. At this level of structure, we will on
 - Homo sapiens (_sapiens_) is the only organism known to produce personal blogs, although their quality and reliability vary considerably. Together with chimpanzees and bonobos, they are classified under the _Homininae_ subfamily (not to be confused with _Hominoidea_, _Hominidae_, _Homininae_, _Hominina_, nor _Homo_ (really, don't).
 - Mitochondria are the powerhouse of the cell. They are not proper "organisms", but rather, _organelles_, structural and functional elements inside living cells. Crucially, they have their own, specialized and limited genome, different (and how!) from their parental cells. At a distant point in the past they likely were free-living prokaryotes, which embraced the benefits of migrating inside another cell, specializing in chemical energy metabolism and losing the ability to live independently (endosymbiosis).
 
-Below I show the relative proportion of each nucleotide in the genome of each of the chosen organisms. We refer to this as a form of _global_ bias, since the computation is done on the entire genome of each organism; for H. sapiens I only used chromosome 1 in order to avoid having to download the entire genome.
+Below I show the relative proportion of each nucleotide in the genome of each of the chosen organisms. We refer to this as a form of _global_ bias, since the computation is done on the entire genome of each organism; for _H. sapiens_ I only used chromosome 1 in order to avoid having to download the entire genome.
 
 ```bash
 Bacteriophage_Lambda
